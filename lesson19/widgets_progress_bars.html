@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Widgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    function inc(){
+      var value = $("#progressbar").progressbar("value") + 5; 
+      if (value <= 100){ 
+        $("p").html("Progress: " + value + "%");
+        $("#progressbar").progressbar("value", value);
+        setTimeout(inc, 100);         
+       } 
+    }
+    $(document).ready(function(){
+      $("#progressbar").progressbar({ value: 0});
+      inc();
+    });
+  </script>
+  <style>
+    #progressbar { 
+      box-shadow: 5px 5px 5px #888888; border:2px ridge;     
+      display:inline-block; height:20px; width:300px; }
+    #progressbar .ui-progressbar-value{ 
+      background-image: -moz-linear-gradient(top, steelblue, skyblue); 
+      background-image: -webkit-linear-gradient(top, steelblue, skyblue); 
+      background-image: -ms-linear-gradient(top , steelblue, skyblue); } 
+  </style>
+  <body>
+    <p></p>
+    <div id="progressbar"></div>
+  </body>
+</html>

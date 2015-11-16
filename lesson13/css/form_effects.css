@@ -1,0 +1,39 @@
+br{clear:both;}
+option, optgroup { padding:0px; margin:0px; height:22px; }
+select, textarea, input{
+  border-radius: 4px; margin:3px; 
+  border:2px groove blue; }
+select:focus, textarea:focus, input:focus {
+  border-radius: 4px; margin:3px; 
+  border:2px groove #3377FF; }
+select{height: 120px; width:100px; text-align:center;}
+img{}
+input[type="radio"], input[type="checkbox"] {display:none;}
+.rb {
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 10px);
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 10px);
+  background: -ms-linear-gradient(bottom, #CCCCCC, #EEEEEE 10px);
+  width: 50px; padding: 3px; 
+  margin-right:-1px; display: inline-block;
+  text-align:center; float:left; border: 1px solid gray; }
+.rb_checked { 
+  background: -moz-linear-gradient(bottom, #0000FF, #7272FF 15px); 
+  background: -webkit-linear-gradient(bottom, #0000FF, #7272FF 15px); 
+  background: -ms-linear-gradient(bottom, #0000FF, #7272FF 15px); 
+  color:white;
+}
+.cb { padding: 3px; margin-right:-1px; width:100px; }
+.cb img{ border:1px dotted; border-radius:4px; 
+  opacity:.5; height:40px; }
+#submit{
+  background-color:#3377FF; color:white; font-weight:bold;
+  border:2px groove blue; border-radius:15px; }
+.collapsibleForm{
+  width:400px; height:auto; padding-bottom:20px;
+  border-radius: 10px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); 
+  font:italic 15px/30px Georgia, serif;}
+p{
+  color:white; background-color:blue; font-weight:bold; 
+  margin:0px; text-align:center; 
+  border-radius: 10px 10px 0px 0px ; }
+form{ padding:20px; }

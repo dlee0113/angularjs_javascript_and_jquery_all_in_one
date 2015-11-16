@@ -1,0 +1,13 @@
+img { 
+	height:200px; }
+div { 
+	height:200px; width:200px; border:1px dotted; 
+  display:inline-block; position:fixed; }
+#frame1 { 
+	top:80px; left:20px; }
+#frame2 { 
+	top:80px; left:240px; }
+#frame3 { 
+	top:80px; left:460px; }
+#frame4 { 
+	top:80px; left:720px; }

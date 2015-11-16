@@ -1,0 +1,11 @@
+img{ width:40px;}
+span{ width:40px; height:40px; display:inline-block;}
+#ship{ position:fixed; width:100px;}
+#moon1{ position:fixed; top:100px; left: 500px; width:70px;}
+#moon2{ position:fixed; top:200px; left: 100px; width:70px;}
+#moon3{ position:fixed; top:300px; left: 300px; width:70px;}
+#moon4{ position:fixed; top:400px; left: 600px; width:70px;}
+body {   
+  background-image:url("/images/nightSky.png");
+  background-repeat:repeat;        
+} 

@@ -1,0 +1,27 @@
+#sorter1, #sorter2, table { 
+	display:inline-block; cursor:move;
+  width:200px; padding:10px; vertical-align:top; 
+  margin:15px; height:auto; box-shadow: 5px 5px 5px #888888; 
+  border:3px ridge white;  }
+#sorter1 div, #sorter2 div { 
+	width:180px; display:inline-block; height:50px;  
+  padding:5px; margin:5px; border:1px dotted;
+  vertical-align:middle; } 
+p { 
+	float:right; margin:0px; display:inline-block; height:50px; 
+  font:bold 18px/50px arial; vertical-align:top; 
+  text-align:center; }
+img { 
+	height:50px; } 
+table { 
+	width:auto; padding:5px; }
+tr { 
+	background-color:white; }
+td {
+	min-width:80px; }
+#sortTable img { 
+	height:20px; }
+.ui-sortable-helper { 
+	background-color:blue; color:white; opacity:.5; }
+table:hover{
+	cursor:move}

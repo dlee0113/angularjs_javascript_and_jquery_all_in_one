@@ -1,0 +1,14 @@
+img{ 
+  display:inline-block; width:150px; height:1px; 
+  margin:0px; padding:0px; float:left; 
+}
+p, span {
+  display:inline-block; width:600px;
+  background-color:black; color:white; 
+  margin:0px; padding:0px; text-align:center;
+}
+span {
+  width:150px; margin:-1px;
+  border:1px solid; background-color:blue; float:left;
+}
+#container { width:610px; }

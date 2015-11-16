@@ -1,0 +1,21 @@
+<parkinfo>
+  <park>
+    <name>Yellowstone</name>
+    <location>Montana, Wyoming, Idaho</location>
+    <established>March 1, 1872</established>
+    <image>bison.jpg</image>
+  </park>
+  <park>
+    <name>Yosemite</name>
+    <location>California</location>
+    <established>March 1, 1872</established>
+    <image>falls.jpg</image>
+  </park>
+  <park>
+    <name>Zion</name>
+    <location>Utah</location>
+    <established>November 19, 1919</established>
+    <image>peak.jpg</image>
+  </park> 
+</parkinfo>
+

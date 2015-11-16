@@ -1,0 +1,12 @@
+p {
+	margin:0px; }
+div {
+	height:80px; width:100px; position:fixed; }
+#drag2 { 
+	top:100px; }
+#drag3 { 
+	top:200px; }
+img { 
+	width:200px; }
+img:hover{
+	cursor:move; }

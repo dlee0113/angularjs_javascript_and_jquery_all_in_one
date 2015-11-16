@@ -1,0 +1,6 @@
+img { 
+	position:fixed; z-index: -1;}
+#needle { 
+	left:450px; top:50px; width: 150px; }
+#ball { 
+  left:50px; top:50px; width: 100px; }

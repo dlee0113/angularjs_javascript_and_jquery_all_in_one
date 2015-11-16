@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>HTML 5 Canvas</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <canvas id="myCanvas" width="300" height="300">
+      Sorry Your Browser Doesn't Support HTML5 Canvas
+    </canvas>
+    <script>
+      var c=document.getElementById("myCanvas");
+      var ctx=c.getContext("2d"); 
+      ctx.lineWidth="1";
+      ctx.strokeStyle="blue";
+      //top  
+      ctx.beginPath();
+      var grd=ctx.createLinearGradient(100,50,100,5);
+      grd.addColorStop(0,"blue");
+      grd.addColorStop(1,"white");
+      ctx.fillStyle=grd;
+      grd.addColorStop(0,"blue");
+      ctx.moveTo(1,25);
+      ctx.lineTo(100,5);
+      ctx.lineTo(200,25);
+      ctx.lineTo(100,50);
+      ctx.fill();  
+      ctx.stroke();   
+      //left
+      ctx.beginPath();
+      var grd=ctx.createLinearGradient(75,100,60,25);
+      grd.addColorStop(0,"red");
+      grd.addColorStop(1,"white");
+      ctx.fillStyle=grd;
+      ctx.moveTo(1,25);
+      ctx.lineTo(100,50);
+      ctx.lineTo(100,165);
+      ctx.lineTo(1,125);
+      ctx.lineTo(1,25);
+      ctx.fill();   
+      ctx.stroke();      
+      //right
+      ctx.beginPath();
+      var grd=ctx.createLinearGradient(200,50,125,175);
+      grd.addColorStop(0,"yellow");
+      grd.addColorStop(1,"white");
+      ctx.fillStyle=grd;
+      ctx.moveTo(100,50);
+      ctx.lineTo(200,25);
+      ctx.lineTo(200,125);
+      ctx.lineTo(100,165);
+      ctx.fill(); 
+      ctx.stroke();   
+    </script>
+  </body>
+</html>

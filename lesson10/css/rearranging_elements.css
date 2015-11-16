@@ -1,0 +1,12 @@
+.photo{
+  border:6px groove;
+  width:200px;
+  position:absolute; top:40px; left:20px;
+}
+span{
+  padding:5px;
+  background-color:steelblue; color:white;
+  border-radius:10px 15px; border:2px dotted blue;
+  cursor:pointer;
+}
+#container{ padding:5px; }

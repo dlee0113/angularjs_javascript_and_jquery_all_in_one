@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Forms</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form>
+       <fieldset>
+          <legend>Contact Info:</legend>
+          Name: <input type="text" name="name">
+	        Origin: <input type="text" name="address"><br>
+	        Destination: <input type="text" name="city">
+	        Flight Date: <input type="text" name="zip"><br>
+        <select name="Airline">
+          <option value="DA">Delta</option>
+          <option value="PJ">Private Jet</option>
+          <option value="Heli">Helicopter</option>
+          <option value="EG">Eagles</option>
+        </select>
+      </fieldset>
+      <input id="One WayRB" type="radio" 
+             name="travelPlan" value="One way">
+      <label for="One WayRB">One Way</label>
+      <input id="Round TripRB" type="radio" 
+             name="travelPlan" value="round trip">
+      <label for="Round TripRB">Round Trip</label><br>
+      <textarea rows="10" cols="30">comments</textarea><br>
+      <input di='newsCB' type="checkbox" name="news" value="news">
+        <label for="newsCB">
+          I would like to enroll into the frequent flyer miles program
+        </label><br>
+      <button type="submit" name="SubmitButton" 
+              value="Submit">Submit</button>
+      <button type="reset" name="ResetButton" 
+              value="Reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+span{
+  border-radius:5px;
+  margin:3px;
+  padding:5px;
+  background-color:#C0C0C0;
+  border:3px ridge;
+  display:inline-block;
+  cursor:pointer;
+}

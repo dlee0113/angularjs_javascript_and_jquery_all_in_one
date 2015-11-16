@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tabs WIdgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    $(document).ready(function(){
+      $( "#tabs" ).tabs(
+          { event: "mouseover", collapsible: true, 
+            active:"false"});
+    });
+  </script>
+  <style>
+    * { vertical-align:top; }
+    img { height:120px; margin:5px; }
+    .mini {height:23px; margin:0px; }
+    #tabs { width:450px; }
+    p { text-align:justify; }
+  </style>
+  <body>
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs1">
+          <img class="mini" src="/images/arch.jpg" />Images</a>
+      </li>
+      <li><a href="#tabs2">Content</a></li>
+      <li><a href="#tabs3">Widgets</a></li>
+    </ul>
+    <div id="tabs1">
+      <img src="/images/jail.jpg" />
+      <img src="/images/sunset.jpg" />
+      <img src="/images/cliff.jpg" />
+      <img src="/images/sunset2.jpg" />
+    </div>
+    <div id="tabs2">
+      <h3>jQuery UI Widgets</h3>
+      <p><b><i>jQuery UI</i></b> 
+        provides a wide array of pre-built widgets that 
+        provide extended functionality to HTML elements. 
+        These widgets provide functionality that make forms 
+        and other input controls more intuitive 
+        and easy to use. For example a calendar 
+        view for choosing dates and expandable menus.
+      </p>
+    </div>
+    <div id="tabs3">
+      <ul>
+        <li>Accordion</li>
+        <li>Menu</li>
+        <li>Button</li>
+        <li>Slider</li>
+        <li>Progress Bar</li>
+        <li>Tabs</li>
+      </ul>
+    </div>
+  </div>
+  </body>
+</html>

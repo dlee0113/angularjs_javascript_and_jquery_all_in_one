@@ -1,0 +1,12 @@
+span {
+	display:inline-block; width:130px; border:1px ridge; 
+	text-align:center; cursor:pointer;     
+  background-image: -moz-linear-gradient(top , lightblue, white);    
+  background-image: -webkit-linear-gradient(top , lightgray, white);    
+  background-image: -ms-linear-gradient(top , lightgray, white); }
+div span{ 
+	width:120px; margin-left:10px; }
+#showMenu { 
+	position:fixed; left:130px; top:8px; }
+#showMenu2 { 
+	position:fixed; left:130px; top:30px; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu Widgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    $(document).ready(function(){
+      $( "#menu" ).menu();
+      $( "#menu" ).on("menuselect", function(e, ui){
+        $("p").html("Selected " + 
+            ui.item.children("a:first").html());
+      });
+    });
+  </script>
+  <style>
+   .ui-menu { width: 200px; }
+   p { box-shadow: 5px 5px 5px #888888; 
+       border:3px ridge steelblue; color:teal; 
+       display:inline-block; height:80px; width:100px; }
+  </style>
+  <body>
+    <ul id="menu">
+      <li><a href="#">Open</a></li>
+      <li><a href="#">Recent</a><ul>
+        <li><a href="#">Some File</a></li>
+        <li><a href="#">Another File</a></li>
+        </ul></li>
+      <li><a href="#">Save</a></li>
+      <li class="ui-state-disabled">
+        <a href="#"><span class="ui-icon ui-icon-print">
+        </span>Print...</a></li>
+      <li><a href="#">Slide Show</a><ul>
+        <li>
+          <a href="#">
+            <span class="ui-icon ui-icon-seek-start"></span>Prev</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-icon ui-icon-stop"></span>Stop</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-icon ui-icon-play"></span>Play</a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="ui-icon ui-icon-seek-end"></span>Next</a>
+        </li>
+        </ul></li>
+    </ul>
+    <p></p>
+  </body>
+</html>

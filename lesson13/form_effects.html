@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Effects</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/form_effects.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/form_effects.css">
+  </head>
+  <body>
+    <div class="collapsibleForm">
+      <p>Register</p>
+      <form>
+        <input type="text" /><label>Name</label><br>
+        <input type="text" /><label>From</label><br>
+        <input type="radio" name="race" id="man" />
+        <label class="rb" for="man">Man</label>
+        <input type="radio" name="race" id="elf" />
+        <label class="rb" for="elf">Elf</label>
+        <input type="radio" name="race" id="dwarf" />
+        <label class="rb" for="dwarf">Dwarf</label>
+        <input type="radio" name="race" id="orc" />
+        <label class="rb" for="Orc">Orc</label><br>
+        <label>Weapons</label><br>
+        <select size=4 multiple>
+          <optgroup><option>Sword</option></optgroup>
+          <optgroup><option>Bow</option></optgroup>
+          <optgroup><option>Axe</option></optgroup>
+          <optgroup><option>Spear</option></optgroup>
+        </select> 
+        <div>
+          <label>Bring Your Own</label><br>
+	        <input type="checkbox" id="horse" />
+	          <label class="cb" for="horse">
+	          <img src="/images/horse.png" />
+	          <span>Horse</span></label>
+	        <input type="checkbox" id="shield" />
+	          <label class="cb" for="shield">
+	          <img src="/images/shield.png" />
+	          <span>Armor</span></label><br>
+         </div>
+        <textarea>Additional Comments</textarea><br>
+        <input type="submit" value="Submit" id="submit" />      
+      </form>
+    </div>
+  </body>
+</html>

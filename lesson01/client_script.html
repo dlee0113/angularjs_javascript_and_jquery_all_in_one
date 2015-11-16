@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Client Side Script</title>
+    <meta charset="utf-8"/>
+    <script>
+      function loadPlanets(){
+        var cities = ["Mercury", "Venus", "Earth", "Mars"];
+        var ulElement = document.getElementById("planetList");
+        for (var city in cities){
+          var listItem = ulElement.appendChild(document.createElement("li"));
+          listItem.appendChild(document.createTextNode(cities[city]));
+        }
+      }  		
+    </script>
+  </head>
+  <body onload="loadPlanets()">
+    <ul id="planetList">
+    </ul>
+  </body>
+</html>

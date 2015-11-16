@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar Widget</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    function dateChanged(dateStr, Object){ 
+      $("span").html("Updated to" + dateStr); }
+    $(document).ready(function(){
+      $( "#month" ).datepicker({
+          onSelect:dateChanged,
+          showOn: "button", 
+          buttonImage: "/images/calendar32.png", 
+          buttonImageOnly: true,
+          numberOfMonths:2,
+          showButtonPanel:true,
+          dateFormat: "yy-mm-dd"
+        });
+    });
+  </script>
+  <style>
+    input { border:2px ridge steelblue; border-radius:3px; }
+  </style>
+  <body>
+    <label>Start Date: </label>
+    <input type="text" id="month"></input>
+    <span></span>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+ span { 
+   display:inline-block; border:1px solid; 
+   font:bold 18px/26px arial; 
+   width:800px; text-align:center; margin:10px;}
+ div { 
+   display:inline-block; border:3px ridge white; 
+   vertical-align:top; margin:10px; }
+ p {
+   border:1px dotted; margin:0px; }
+ #set1 {
+   height:300px; width:200px; overflow-y:auto; 
+   text-align:center; }
+ #set1 .ui-selecting { 
+   background-image: -moz-linear-gradient(top , #88BBFF, #DDEEFF); 
+   background-image: -webkit-linear-gradient(top , #88BBFF, #DDEEFF); 
+   background-image: -ms-linear-gradient(top , #88BBFF, #DDEEFF); }
+ #set1 .ui-selected { 
+   background-color:blue; color:white; }
+ img { 
+   height:90px; border:3px ridge white; margin:15px; 
+   box-shadow: 5px 5px 5px #888888; opacity:.6; }
+ #set2 { 
+   width:500px; padding:25px; border-radius:15px; }
+ #set2 .ui-selecting{ 
+   border:5px ridge green; box-shadow: 5px 5px 5px #558822; }
+ #set2 .ui-selected{ 
+   border:5px ridge blue; box-shadow: 5px 5px 5px #225588; 
+   opacity:1; } 

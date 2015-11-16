@@ -1,0 +1,9 @@
+<div>
+  <div  class="imgList" >
+	  <li ng-repeat="photo in photos" 
+	        ng-class="{active:photo.selected}">
+	    <a href="" ng-click="select(photo)">{{photo.title}}</a>
+	  </li>  
+  </div>
+  <div class="imgView" ng-transclude></div>
+</div>

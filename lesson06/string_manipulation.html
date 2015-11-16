@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Manipulation</title>
+    <meta charset="utf-8" />
+<script>
+  function writeIt(){
+    var line1 = "In a [place] a long time ago, ";
+    var line2 = "there lived an [animal] that liked to ";
+    var line3 = "[action] people.";
+    var place = "crater";
+    var animal = "elephant";
+    var action = "smell";
+    var madlib = line1.concat(line2, line3);
+    madlib = madlib.replace("[place]", place);
+    madlib = madlib.replace("[animal]", animal);
+    madlib = madlib.replace("[action]", action);
+    document.write(madlib);
+  }
+</script>
+  </head>
+  <body onload="writeIt()">
+  </body>
+</html>

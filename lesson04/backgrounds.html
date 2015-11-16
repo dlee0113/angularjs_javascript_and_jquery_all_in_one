@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backgrounds</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        margin:0px;
+        background-image:url("/images/ruler.png");
+        background-repeat:repeat-y;        
+      }     
+      #heading { 
+        background-image: -moz-linear-gradient(left, #294551 0%, #AACCFF 100%);
+        background-image: -webkit-linear-gradient(left, #294551 0%, #AACCFF 100%);
+        background-image: -ms-linear-gradient(left, #294551 0%, #AACCFF 100%);
+        height:200px;        
+        font:150px bold;
+        text-align: center;
+        color:rgba(255,255,255,.4);
+      }      
+      #content {        
+        margin-left:200px;        
+      } 
+      #menu{
+        padding:2px;
+        background-color:#294551;
+      }
+      span {
+        padding:3px; 
+        background-image: -moz-linear-gradient(top, #294551 0%, #AACCFF 85%, #0022ff 100%);
+        background-image: -webkit-linear-gradient(top, #294551 0%, #AACCFF 85%, #294551 100%);
+        background-image: -ms-linear-gradient(top, #294551 0%, #AACCFF 85%, #294551 100%);
+        font:20px bold;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading">jQuery Rules!</div>    
+    <div id="content">
+      <div id="menu">
+        <span>Home</span>
+        <span>Info</span>
+        <span>Examples</span>
+      </div>
+      <p>Page Content</p>      
+    </div>        
+  </body>
+</html>

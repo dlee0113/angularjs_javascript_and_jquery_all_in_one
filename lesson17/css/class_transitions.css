@@ -1,0 +1,20 @@
+span { 
+	display:inline-block; height:30px; width:200px; 
+	margin-top:20px; border:1px ridge; 
+  text-align:center; font:bold 20px/30px arial; }
+.round {
+	border-width:3px; border-radius:60px 30px; 
+	height:60px; width:320px; line-height:60px;
+  background-color:steelblue; color:white; font-size:40px; }
+.square {
+	border-width:6px; background-color:gold; color:black; }
+.active {
+	background-image: -moz-linear-gradient(top , lightblue, gainsboro); 
+  background-image: -webkit-linear-gradient(top , lightblue, gainsboro);
+  background-image: -ms-linear-gradient(top , lightblue, gainsboro);
+  border-radius:4px 4px; border:3px outset slategrey; }
+.inactive {
+	background-image: -moz-linear-gradient(top , darkgrey, white); 
+  background-image: -webkit-linear-gradient(top , darkgrey, white);
+  background-image: -ms-linear-gradient(top , darkgrey, white);
+  border-radius:4px; color:#steelblue; }

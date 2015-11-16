@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Custom Directive</title>
+  <style>
+    * { text-align: center; }
+    .titleBar { color: white; background-color: grey; 
+                font: bold 14px/18px arial; display: block; 
+                border-bottom: 4px ridge grey; }
+    .footer {  color: white; background-color: grey;
+               font: italic 10px/14px arial; display: block;
+               border-top: 4px ridge grey; }
+    mybox { border: 4px ridge grey; margin: 10px; }
+    img { display: block; }
+  </style>
+</head>
+<body>
+  <div ng-controller="myController">
+    <h2>Custom Directive Manipulating the DOM</h2>
+    <mybox title="Simple Text" bwidth="100px">
+      Using AngularJS to build a box around text.
+    </mybox>
+    <mybox title="Paragraph" bwidth="200px">
+      <p>Using AngularJS to build a box around a paragraph.</p>
+    </mybox>    
+    <mybox title="List" bwidth="200px">
+      <ul>
+        <li>Using AngularJS</li>
+        <li>to build a box</li>
+        <li>around a list.
+        </li>
+      </ul>
+    </mybox>
+    <mybox title="Image" bwidth="400px">
+      <img src="/images/sunset2.jpg" width="400px" />
+    </mybox>
+  </div>
+  <script src="http://code.angularjs.org/1.3.8/angular.min.js"></script>
+  <script src="js/directive_custom_dom.js"></script>
+</body>
+</html>

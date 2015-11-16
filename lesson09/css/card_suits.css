@@ -1,0 +1,14 @@
+span{
+  border-radius:5px;
+  margin:3px;padding:5px;
+  background-color:#C0C0C0;
+  border:3px ridge;
+  display:inline-block;
+  cursor:pointer;
+}
+p{
+  border:4px outset steelblue;
+  padding:3px;
+  color:white;background-color:skyblue;
+  font-size:30px;font-weight:bold;
+}

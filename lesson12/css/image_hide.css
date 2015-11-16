@@ -1,0 +1,13 @@
+div{ width:300px; text-align:center; }      
+#title, #handle, #footer{
+  background-color:blue; color:white;
+  font-weight:bold; 
+}
+#handle{
+  display:inline-block; width:20px; float:left; 
+  background-color:black; cursor:pointer;
+}
+#footer{
+  font-size:10px; background-color:black; 
+  margin-top:-5px
+}

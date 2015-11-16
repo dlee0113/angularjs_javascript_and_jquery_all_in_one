@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Objects</title>
+    <meta charset="utf-8" />
+<script>
+  function writeIt(){
+    var characters = new Array();
+    characters.push(new Character("John 117", "Master Chief", 
+                                  "Earth", "Spartan"));
+    characters.push(new Character("vadam", "The Arbitor", 
+                                  "High Charity", "Elite"));
+    characters.push(new Character("Gravemind", "", "Precursors", 
+                                  "Flood"));
+    sgtJohnson = new Character("Sgt Johnson", "", "", "");
+    sgtJohnson.land = "Earth";
+    sgtJohnson.race = "Human";
+    characters.push(sgtJohnson);
+    for (var i=0; i<characters.length; i++){
+      var character = characters[i];
+      character.number = i+1;
+      document.write(character.number + ". " +
+                     character.getFullName() + " " + 
+                     character.getDetails() + "<br>");
+    }
+  }
+  function Character(first, last, land, race){
+    this.first = first;
+    this.last = last;
+    this.race = race;
+    this.land = land;
+  }
+  Character.prototype = {
+    getFullName: function(){
+        return this.first + " " + this.last;
+    },
+    getDetails: function(){
+        return "is a " + this.race + " from the " + this.land;
+      }
+  };
+</script>
+  </head>
+  <body onload="writeIt()">
+  </body>
+</html>

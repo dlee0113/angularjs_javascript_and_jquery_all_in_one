@@ -1,0 +1,38 @@
+div { 
+	margin:0px; display:inline-block; 
+	float:left; text-align:center; }
+span { 
+	background-image: -moz-linear-gradient(top , #f1f1f1, #8F8F8F); 
+  background-image: -webkit-linear-gradient(top , #f1f1f1, #8F8F8F);
+  background-image: -ms-linear-gradient(top , #f1f1f1, #8F8F8F);
+  color:black; border:2px ridge darkblue; 
+  font-size:20px; float:left; cursor:pointer; 
+  width:145px; text-align:center; border-radius: 4px; }
+p { 
+	margin:0px; }
+#title { 
+	background-color:steelblue; color:white; 
+	height:80px; width:750px; font-size:60px; }
+#leftNav{
+	width:150px; height:400px; font-size:20px; 
+	background-color:#AACCFF; }
+#content{ 
+	height:400px; width: 600px; font-size:40px;  
+	background-color:#EEEEEE; }
+#overlay { 
+	position:fixed; top:10px; left:10px; 
+	height:480px; width:750px; 
+  opacity:.8; background-color:white; }
+#dialog { 
+	border: 3px groove blue;  text-align:left; 
+	padding:10px; position:fixed; 
+	top:100px; left:200px; background-color:white; }
+#dialogTitle { 
+	text-align:center; font:20px bold; 
+	background-color:blue; color:white; 
+	margin:-10px -10px 5px -10px; }
+#contentT, #titleT { 
+	border-radius: 3px;  width:150px; padding:5px; 
+  margin:10px; border:2px groove blue; }
+label { 
+	font:bold italic 18px "Arial Black" } 

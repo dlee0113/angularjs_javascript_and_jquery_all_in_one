@@ -1,0 +1,23 @@
+$.widget("custom.mywidget", {
+  options : {
+    // custom options
+  },
+  _create: function() {
+    //creation code
+  },
+  _refresh: function() {
+    //refresh code called when element refreshed
+  },
+  _destroy: function() {
+    //cleanup code called when widget is destroyed
+  },
+  _setOptions: function() {
+    // _super and _superApply handle keeping the right this-context
+    this._superApply( arguments );
+    this._refresh();
+  },
+  _setOption: function( key, value ) {
+    // set individual option value override code
+    this._super( key, value );
+  }
+});

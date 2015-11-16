@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+      function moveIt(){
+        var coords = new Array(10,50,100,130,175,225,260,300,320,350);
+        var x = coords[Math.floor((Math.random()*10))];
+        var y = coords[Math.floor((Math.random()*10))];
+        $("#elusiveText").css({"top": x + "px", "left": y + "px"})
+      }
+    </script>
+    <style>
+      span{
+        background-color: #0066AA;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-color: #C0C0C0;
+        border:2px solid;
+        border-radius:5px;
+        padding: 3px;
+        position:absolute;
+        top:150px;
+        left:100px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="elusiveText" onmouseover="moveIt()">Click Me</span>
+  </body>
+</html>

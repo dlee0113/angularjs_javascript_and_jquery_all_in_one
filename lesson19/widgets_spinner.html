@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spinner Widgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    $(document).ready(function(){
+      $( "#spin1" ).spinner({step: 0.5});
+      $( "#spin2" ).spinner({step: 1});
+      $( "#spin3" ).spinner({step: 10});
+    });
+  </script>
+  <style>
+    label { display:inline-block; width:100px; }
+  </style>
+  <body>
+    <p>
+      <label for="spin1">Count by .5s:</label>
+      <input id="spin1" name="value" /><br>
+      <label for="spin2">Count by 1s:</label>
+      <input id="spin2" name="value" /><br>
+      <label for="spin3">Count by 10s:</label>
+      <input id="spin3" name="value" /><br>
+    </p>
+  </body>
+</html>

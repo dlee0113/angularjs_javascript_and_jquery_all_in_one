@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog Widgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    $(document).ready(function(){
+       $( "#dialog" ).dialog({ modal: true, 
+         buttons: { Sweet: function() { 
+           $( this ).dialog( "close" ); }}});
+    });
+  </script>
+  <style>
+    img { height:60px; float:left; }
+  </style>
+  <body>
+    <div id="dialog" title="Upload Successful">
+      <p>
+        <img src="/images/sunset2.jpg" />
+        <span class="ui-icon ui-icon-circle-check"></span>
+        Image Uploaded Successfully.
+      </p>
+      <p>You are currently using <br>
+        <b>32% of your storage space</b>.</p>
+    </div>
+  </body>
+</html>
+
+

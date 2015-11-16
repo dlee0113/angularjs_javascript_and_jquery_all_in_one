@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Widgets</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  </head>
+  <script>
+    function cValue(selector){
+      var v = $(selector).slider("value").toString( 16 );
+      if (v.length ===1) { v = "0" + v;}
+      return v;
+    }
+    function refreshSwatch() {
+      $("#mix").css("background-color", "#" + cValue("#red") +
+        cValue("#green") +  cValue("#blue"));
+      $("#mix").html($("#mix").css("background-color")); 
+    }
+    $(document).ready(function(){
+       $( "#red, #green, #blue" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        max: 255,
+        value: 127,
+        slide: refreshSwatch,
+        change: refreshSwatch
+      });
+      $("#red").slider("value", 128);
+      $("#green").slider("value", 128);
+      $("#blue").slider("value", 128);
+    });
+  </script>
+  <style>
+    #mix { 
+      width:160px; height:100px; text-align:center; 
+      font:18px/100px arial; }
+    #red, #green, #blue { 
+      float: left; clear: left; width: 150px; margin: 15px; }
+    #red .ui-slider-range { background:red; }
+    #red .ui-slider-handle { border-color:red; }
+    #green .ui-slider-range { background:green; }
+    #green .ui-slider-handle { border-color:green; }
+    #blue .ui-slider-range { background:blue; }
+    #blue .ui-slider-handle { border-color:blue; }
+  </style>
+  <body>
+    <div id="mix"></div>
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+  </body>
+</html>

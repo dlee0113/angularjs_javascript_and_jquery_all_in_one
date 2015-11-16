@@ -1,0 +1,8 @@
+img {width:80px;}
+th { 
+  background-image: -moz-linear-gradient(top , #0000FF, #88BBFF);
+  background-image: -webkit-linear-gradient(top , #0000FF, #88BBFF);
+  background-image: -ms-linear-gradient(top , #0000FF, #88BBFF);
+  color:white;  font:bold 18px arial black; }
+caption { border-radius: 10px 10px 0px 0px; font-size:22px; height:30px; }
+td { border:1px dotted; padding:2px; }

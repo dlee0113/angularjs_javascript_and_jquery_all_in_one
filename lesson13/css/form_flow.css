@@ -1,0 +1,24 @@
+input[type=text] {
+   width:200px; margin-left:15px; padding-left:10px;
+   border-radius: 3px; border:2px groove blue;}
+select {margin-left:10px}
+img {margin-top:10px; }
+#addr, #addrB { width:400px; }
+#zip, #zipB { width:60px ; }
+#csc { width:40px; }
+#box, #billInfo, #shipInfo{
+   font:italic 20px/30px Georgia, serif;
+   width:650px; height:auto; padding-bottom:20px; margin:10px;
+   border-radius: 3px; box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); }
+#billInfo, #shipInfo { width:550px; padding:10px;}
+#submitB, #resetB{
+   background-color:#3377FF; color:white; font-weight:bold;
+   border:2px groove blue; border-radius:15px; }
+p{ color:white; background-color:dodgerblue; 
+   font-weight:bold; margin:0px; 
+   text-align:center; border-radius: 4px 4px 0px 0px ; }   
+span{ dispaly:inline-block; 
+  margin-left:-15px -15px; color:black; font-weight:bold; }
+form{ padding:20px; }
+.headLabel{ display:block; margin-bottom:-8px;}
+label{ color:#000088; font-size:14px;}

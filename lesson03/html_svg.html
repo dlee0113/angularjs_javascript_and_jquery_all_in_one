@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html 5 graphics</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+         height="200">
+      <ellipse   cx="100" cy="100" rx="80" ry="50" 
+                 stroke="black" stroke-width="2" 
+                 fill="transparent" />
+      <ellipse   cx="100" cy="100" rx="50" ry="80" 
+                 stroke="black" stroke-width="2" 
+                 fill="transparent"
+                 transform="rotate(30, 100, 100)" />
+      <ellipse   cx="100" cy="100" rx="80" ry="50" 
+                 stroke="black" stroke-width="2" 
+                 fill="transparent"
+                 transform="rotate(60, 100, 100)" />
+      <ellipse   cx="100" cy="100" rx="8" ry="2" 
+                 stroke="crimson" stroke-width="2" 
+                 fill="crimson"
+                 transform="rotate(45, 100, 100)" />
+      <ellipse   cx="100" cy="100" rx="2" ry="8" 
+                 stroke="crimson" stroke-width="2" 
+                 fill="crimson"
+                 transform="rotate(45, 100, 100)" />
+      <ellipse   cx="100" cy="100" rx="2" ry="8" 
+                 stroke="crimson" stroke-width="2" 
+                 fill="crimson" /> 
+      <ellipse   cx="100" cy="100" rx="8" ry="2" 
+                 stroke="crimson" stroke-width="2" 
+                 fill="crimson" />                  
+      <circle    cx="100" cy="100" r="6"
+            stroke="red" stroke-width="4" fill="DarkRed"/>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+         height="200">
+      <path d="M100,90 h-50 a50,50 0 1,0 50,-50 z"
+            fill="none" stroke="purple" stroke-width="1" />
+      <path d="M90,80 v-50 a50,50 0 0,0 -50,50 z"
+            fill="violet" stroke="none" stroke-width="2" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+         height="350">
+      <defs>
+        <path id="path1" 
+              d="M 77,210 a 1,1 0 1,1 200,0 a 1,1 0 1,1 -200,1"/>
+      </defs>
+      <text x="10" y="10" style="fill:blue;font-size:31px;">
+        <textPath xlink:href="#path1">
+          Teach Yourself AngularJS JavaScript and jQuery
+        </textPath>
+      </text>
+      <path d="M 175,130 v90 h60" stroke="black" 
+            stroke-width="5" fill="none"/>
+    </svg>
+  </body>
+</html>
